@@ -3,6 +3,9 @@
 /* 전체적인 margin,padding값 초기화 */
 *{margin:0;padding:0;}
 
+/* 되돌아가기 링크 */
+.backlink {display:block;height:35px;line-height:35px;text-decoration:none;font-size:17px;font-family:'Verdana';font-weight:bold;padding-top:20px;padding-bottom:20px;padding-left:20px;}
+
 hr{margin-top:20px;}
 /*********************************** 연습1 ********************************************/
 
