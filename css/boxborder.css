@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* 전체적인 margin,padding값 초기화 */
+*{margin:0;padding:0;}
+
+hr{margin-top:20px;}
+/*********************************** 연습1 ********************************************/
+
+/* 기본적인 box셋팅 */
+.box{/* width값 지정 => 200px; */display:flex;align-items:center;justify-content:center;width:200px;/* 높이값 지정 => 200px; */height:200px;border-width:50px;border-style:solid;border-color:red;}
+
+/* box사이 간격 조정 : not선택자 활용 : 첫번째 요소를 제외하고 나머지 요소 선택*/
+.box:not(:first-child){margin-top:20px;}
+
+/*
+* box 사이 간격 조정 방법2
+* .box + .box : .box요소의 다음으로 오는 .box에 margin-top값 주기
+* .box + .box{margin-top:20px;}
+*/
+
+/* border값 green설정 */
+.green{border-color:#008000;}
+
+/* border값 blue설정 */
+.blue{border-color:#0000ff;}
+
+/* 추가적인 박스 컬러 지정용 */
+h2.additional_title{margin-top:30px;}
+
+/* border값 purple설정 */
+.purple{border-color:purple;}
+
+/* border값 violet설정 */
+.violet{border-color:violet;}
+
+/* border값 aqua설정 */
+.aqua{border-color:aqua;}
+
+/*********************************** 연습2 ********************************************/
+
+/* 모든 <h1> 태그에 글씨색 #9b59b6 주기 */
+.practice2 h1{color:#9b59b6;}
+
+/* 모든 <p> 태그에 글씨크기 16px, 글씨체 Verdana, 글씨 스타일 italic 주기 */
+.pracitce .challenge2 p{font-size:16px;font-family:'Verdana',sans-serif;font-style:italic;}
+
+/* sub-header 글씨색 #2980b9 주기 */
+.pracitce .challenge2 .sub-header{color:#2980b9;}
+
+/* <p> 태그 첫번째 글씨만 200% 키우고 색깔 #2980b9 주기 */
+.practice2 .challenge2 p::first-letter{font-size:200%;color:#2980b9;}
+
+/* 참고 : https://www.w3schools.com/cssref/sel_firstletter.asp */
+
+/* 모든 <h1>태그 전에 Topic: 붙이기 */
+.practice2 h1:before{content:'Topic ';}
+/* 참고: https://www.w3schools.com/cssref/sel_before.asp */
+
+/* 보너스🚀 노트스타일의 뒷 배경 주기 */
+.practice2{margin-top:40px;background:radial-gradient(circle at 0% 50%,rgba(96, 16, 48, 0) 9px,#613 10px,rgba(96, 16, 48, 0) 11px) 0px 10px, radial-gradient(at 100% 100%,rgba(96, 16, 48, 0) 9px,#613 10px,rgba(96, 16, 48, 0) 11px),#8a3;background-size: 20px 20px;}
+/* 참고: http://projects.verou.me/css3patterns/ */
+/* 전체 내용을 안으로 10% 정도 들여쓰기 */
+.practice2 .challenge2 *{padding-left:10%;}
+/* 보너스🚀 첫번째 <h1> 태그만 글자 가운데정렬 하기 */
+/* 참고: https://www.w3schools.com/cssref/sel_firstchild.asp */
+
+/* .practice2 h1:first-child */
+.practice2 h1:first-of-type{text-align:center;}

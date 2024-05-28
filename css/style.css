@@ -1,0 +1,24 @@
+@charset "UTF-8";
+*{margin:0;padding:0;}
+
+/* .img_wrap{text-align:center;} */
+
+/* 이미지 크기 조정 */
+img{max-width:100%;}
+.imgbox{font-size:0;} /*불필요한 margin값 제거*/
+.img-size{display:inline-block;width:300px; height:300px;}
+
+.img-size[src]{height:auto;}
+/* title */
+.red{background-color:#ffff00;color:#ff0000;text-align:center;}
+
+/* 파란 선 색 지정 */
+.border-blue{border:5px solid #0000ff;}
+
+/* margin 속성 조정 */
+.margin-space{margin-top:40px;margin-left:100px;margin-bottom:40px;}
+
+/* padding 값 조정 */
+.padding-space{
+    padding-top:40px;
+}

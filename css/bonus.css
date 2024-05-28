@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{margin:0;padding:0;}
+
+/*전체적으로 p태그에 스타일 조정*/
+/* p{color:#ff0000;} */
+
+div .new-style{
+    color:#ff0000;
+}
+
+/*
+    div .new style =>div 태그 아래에 있는 모든 자손들 중
+    스타일이 new-style을 가진(class가 new-style값) 태그만 선택
+*/
+
+span > .new-style{
+    color:red;
+}
+
+/*
+    span >.new-style :
+    span 태그 바로 밑에 자식 중에서 .new-style 클래스를 가진 요소를 선택
+*/
+.second-style{
+
+}
+
+/*
+* 정리
+* 1. class를 이용한 스타일 주기
+* 2. id를 이용
+* 3. 직접적으로 스타일 주기
+* 4. 복합 선택자
+* ex) div .new-style
+*/
